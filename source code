@@ -37,7 +37,7 @@ int s;
   
 rules ();
   
-printf ("\n\nType 1 to start the game:-\nType 2 to view leader board:-\n");
+printf ("\n\nType 1 to start the game:-\nType 2 to view Leaderboard:-\n");
   
 scanf ("%d", &s);
   
@@ -48,13 +48,13 @@ if (s == 1)
 read:
 p = fopen ("score.txt", "a+");
       
-printf ("\nEnter name of player1: ");
+printf ("\nEnter the name of player1: ");
       
 scanf ("%s", u1);
       
 fprintf (p, "\n%s", u1);
       
-printf ("Enter name of player2: ");
+printf ("Enter the name of player2: ");
       
 scanf ("%s", u2);
       
@@ -66,7 +66,7 @@ if (!strcmp (u1, u2))
 	
 	{
 	  
-printf ("Enter names of different players!\n\n");
+printf ("Enter names of the players!\n\n");
 	  
 goto read;
 	
@@ -191,7 +191,7 @@ fclose (p);
       
       else
 	
-printf ("\n\nGame Draws!\n\n");
+printf ("\n\nGame Draw!\n\n");
       fprintf (p, "\t%s", "DRAW");
       
 getch ();
@@ -347,7 +347,7 @@ char link;
 printf ("\tTic-Tac-Toe\n\n");
   
 printf
-    ("Welcome to the most played 2D game and a sort of fun using X and O\n\n");
+    ("Welcome to the most played 2D game using X and O\n\n");
   
 printf ("Rules:-\n");
   
@@ -360,7 +360,7 @@ printf
 printf ("\n\nEnjoy the game! Be a Winner!\n\n");
   
 printf
-    ("For more clarifications press Y else type any other character:- ");
+    ("For more clarifications press Y, else type any other character:- ");
   
 scanf ("%c", &link);
   
@@ -383,7 +383,7 @@ decision ()
 char dec;
 
 deci:
-printf ("\n\nPlayer1 %s choose the X or 0:", u1);
+printf ("\n\nPlayer1 %s choose X or 0:", u1);
   
 dec = getchar ();
   
